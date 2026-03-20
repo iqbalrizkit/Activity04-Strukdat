@@ -89,4 +89,11 @@ Berfungsi sebagai pengelola utama sistem (controller).
 ## Screenshoot Output
 ## Penjelasan Prinsip OOP yang diterapkan
 ## Penjelasan Keunikan Masalah
+* Penggunaan CRUD
+  
+  Penggunaan operasi CRUD (Create, Read, Update, Delete) memungkinkan panitia untuk menambahkan data peserta baru, melihat daftar peserta, memperbarui informasi seperti kategori lomba atau waktu tempuh, menghapus data yang tidak diperlukan dan memudahkan panitia untuk mencatat data dari setiap peserta dari kategori 5K, 10K hingga Half Marathon untuk dilakukan analisis secara lebih lanjut. Dengan adanya fitur ini, proses administrasi menjadi lebih efisien dan meminimalisir kesalahan dalam pengolahan data.
+* Analisis Merk Sepatu
+  
+  Analisis yang dilakukan berupa identifikasi merk sepatu yang paling banyak digunakan oleh peserta yang berhasil menyelesaikan lomba. Informasi ini dapat memberikan insight terkait preferensi peserta serta potensi hubungan antara perlengkapan yang digunakan dengan performa mereka. Dengan adanya fitur ini, sistem tidak hanya berfungsi sebagai alat pencatatan, tetapi juga sebagai sumber informasi yang bermanfaat untuk evaluasi event di masa mendatang.
+
 
