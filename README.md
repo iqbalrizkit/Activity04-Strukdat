@@ -1,15 +1,9 @@
 # Exercise Activity 04 Struktur Data and OOP
 
 ## Deskripsi Masalah yang diangkat
-Dalam penyelenggaraan event lari, panitia sering menghadapi berbagai kendala dalam pengelolaan data peserta dan proses identifikasi selama dan setelah perlombaan berlangsung. Salah satu permasalahan utama adalah kesulitan dalam membedakan kategori peserta secara visual, seperti kategori 5K, 10K, dan Half Marathon, terutama ketika jumlah peserta sangat banyak.
+Penyelenggaraan event lari, sering menghadapi berbagai kendala dalam pengelolaan data peserta dan proses identifikasi selama dan setelah perlombaan berlangsung. Salah satu permasalahan utama adalah kesulitan dalam membedakan kategori peserta secara visual, seperti kategori 5K, 10K, dan Half Marathon, terutama ketika jumlah peserta sangat banyak. Selain itu, panitia juga perlu memastikan bahwa peserta yang terdaftar benar-benar menyelesaikan lomba sesuai dengan aturan yang telah ditentukan. Setiap kategori memiliki batas waktu (cut-off time) yang berbeda, sehingga diperlukan sistem yang mampu memvalidasi apakah peserta berhasil finish tepat waktu atau tidak.
 
-Selain itu, panitia juga perlu memastikan bahwa peserta yang terdaftar benar-benar menyelesaikan lomba sesuai dengan aturan yang telah ditentukan. Setiap kategori memiliki batas waktu (cut-off time) yang berbeda, sehingga diperlukan sistem yang mampu memvalidasi apakah peserta berhasil finish tepat waktu atau tidak. Tanpa sistem yang terstruktur, proses ini rentan terhadap kesalahan dan ketidakkonsistenan dalam pemberian reward.
-
-Permasalahan lainnya adalah pemberian atribut dan penghargaan kepada peserta. Setiap kategori memiliki perbedaan jersey dan medali, serta reward khusus untuk kategori tertentu seperti Half Marathon yang mendapatkan jaket finisher. Oleh karena itu, diperlukan mekanisme yang dapat memastikan bahwa hanya peserta yang memenuhi syarat yang berhak menerima penghargaan tersebut.
-
-Di sisi lain, panitia juga membutuhkan informasi tambahan untuk analisis, seperti mengetahui merk sepatu yang paling banyak digunakan oleh peserta yang berhasil menyelesaikan lomba. Informasi ini dapat memberikan insight terhadap performa peserta dan menjadi nilai tambah dalam evaluasi event.
-
-Berdasarkan permasalahan tersebut, dibutuhkan sebuah sistem manajemen event running yang mampu mengelola data peserta secara terstruktur melalui fitur CRUD (Create, Read, Update, Delete), memvalidasi status finish berdasarkan waktu tempuh, mengatur distribusi atribut seperti jersey, medali, dan jaket finisher, serta menyediakan fitur analisis sederhana terhadap data peserta.
+Di sisi lain, setiap kategori pastinya memiliki perbedaan jersey dan medali serta reward khusus untuk kategori tertentu seperti Half Marathon yang mendapatkan jaket finisher. Oleh karena itu, diperlukan mekanisme yang dapat memastikan bahwa hanya peserta yang memenuhi syarat yang berhak menerima penghargaan tersebut. Berdasarkan permasalahan tersebut, dibutuhkan sebuah sistem manajemen event running yang mampu mengelola data peserta secara terstruktur seperti validasi status finish berdasarkan waktu tempuh, mengatur distribusi atribut seperti jersey, medali, dan jaket finisher, serta menyediakan fitur analisis sederhana terhadap data peserta. Hal tersebut bertujuan untuk meminimalisir kesalahan dan ketidakkonsistenan supaya event lari berjalan dengan lancar dan mendapat feedback membangun dari peserta untuk evaluasi dan pengembangan event selanjutnya.
 
 ---
 
@@ -91,7 +85,7 @@ Berfungsi sebagai pengelola utama sistem (controller).
 ## Penjelasan Keunikan Masalah
 * Penggunaan CRUD
   
-  Penggunaan operasi CRUD (Create, Read, Update, Delete) memungkinkan panitia untuk menambahkan data peserta baru, melihat daftar peserta, memperbarui informasi seperti kategori lomba atau waktu tempuh, menghapus data yang tidak diperlukan dan memudahkan panitia untuk mencatat data dari setiap peserta dari kategori 5K, 10K hingga Half Marathon untuk dilakukan analisis secara lebih lanjut. Dengan adanya fitur ini, proses administrasi menjadi lebih efisien dan meminimalisir kesalahan dalam pengolahan data.
+  Penggunaan operasi CRUD (Create, Read, Update, Delete) memungkinkan panitia mempunyai menu yang mempermudah dalam menambahkan data peserta baru, melihat daftar peserta, memperbarui informasi seperti kategori lomba atau waktu tempuh, menghapus data yang tidak diperlukan dan mencatat data dari setiap peserta dari kategori 5K, 10K hingga Half Marathon untuk dilakukan analisis secara lebih lanjut. Dengan adanya fitur ini, proses administrasi menjadi lebih efisien dan meminimalisir kesalahan dalam pengolahan data.
 * Analisis Merk Sepatu
   
   Analisis yang dilakukan berupa identifikasi merk sepatu yang paling banyak digunakan oleh peserta yang berhasil menyelesaikan lomba. Informasi ini dapat memberikan insight terkait preferensi peserta serta potensi hubungan antara perlengkapan yang digunakan dengan performa mereka. Dengan adanya fitur ini, sistem tidak hanya berfungsi sebagai alat pencatatan, tetapi juga sebagai sumber informasi yang bermanfaat untuk evaluasi event di masa mendatang.
