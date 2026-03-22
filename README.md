@@ -81,6 +81,50 @@ Berfungsi sebagai pengelola utama sistem (controller).
 ---
 
 ## Screenshoot Output
+* Menu Interaktif CRUD
+
+Menu interaktif berbasis CRUD memungkinkan panitia berinteraksi langsung dengan sistem untuk mengelola data peserta event running.
+
+<img width="642" height="274" alt="Screenshot 2026-03-23 034208" src="https://github.com/user-attachments/assets/84202e74-7899-4f42-a1ec-9459510c3466" />
+
+* Tambah Peserta
+
+Berfungsi untuk memasukkan data peserta baru ke dalam sistem.
+
+<img width="626" height="233" alt="Screenshot 2026-03-23 034304" src="https://github.com/user-attachments/assets/823d2eff-5457-417f-9685-d3b0bfc8426a" />
+
+* Tampilkan Peserta
+
+Menampilkan daftar seluruh peserta yang sudah terdaftar dalam event running.
+  
+<img width="640" height="190" alt="Screenshot 2026-03-23 034817" src="https://github.com/user-attachments/assets/378502ee-55b4-4265-80b8-752b408246b7" />
+
+* Hapus Peserta
+
+Digunakan untuk menghapus peserta tertentu dari daftar peserta event running.
+
+<img width="628" height="157" alt="Screenshot 2026-03-23 034359" src="https://github.com/user-attachments/assets/7e977ee8-7e7f-4972-9ecd-8b12210a7d71" />
+
+* Analisis Sepatu
+
+Berfungsi sebagai fitur rekapitulasi untuk melihat tren penggunaan merk sepatu peserta event running yang berhasil finish.
+
+<img width="640" height="218" alt="Screenshot 2026-03-23 034830" src="https://github.com/user-attachments/assets/e8e30173-2c95-45ac-ad36-32a9de9fe730" />
+
+* Tampilkan Reward
+
+Menentukan perolehan penghargaan berdasarkan performa atau kategori peserta event running.
+
+<img width="620" height="246" alt="Screenshot 2026-03-23 034854" src="https://github.com/user-attachments/assets/c91dea51-94cc-4f62-a2d6-bcfd4eb9d242" />
+
+* Keluar/Exit
+
+Berfungsi untuk menghentikan jalannya program secara normal.
+
+<img width="645" height="118" alt="Screenshot 2026-03-23 034918" src="https://github.com/user-attachments/assets/ad8416d1-693b-47ca-8968-17d8f13d56d2" />
+
+
+
 ## Penjelasan Prinsip OOP yang diterapkan
 ## Penjelasan Keunikan Masalah
 * Penggunaan CRUD
