@@ -129,49 +129,129 @@ Berfungsi untuk menghentikan jalannya program secara normal.
 
 * Class
 
-* Encapsulation
-
-Menggabungkan atribut dan method dalam satu class. Salah satu inplementasinya sebagai berikut: 
+Class adalah blueprint/kerangka objek. Di sini Peserta merepresentasikan data peserta lomba.
 
 ```java
-public class Peserta {
+class Peserta {
+    protected
     String nama;
     String merkSepatu;
     double waktuFinish;
     String status;
     Kategori kategori;
-    
-    public Peserta(String nama, String merkSepatu, double waktuFinish, Kategori kategori) {
-        this.nama = nama;
-        this.merkSepatu = merkSepatu;
-        this.waktuFinish = waktuFinish;
-        this.kategori = kategori;
+}
+```
+
+* Method
+
+Method adalah fungsi yang dimiliki objek. Method ini digunakan untuk menentukan status peserta berdasarkan waktu finish.
+
+```java
+public void cekStatus() {
+   if (waktuFinish <= kategori.batasWaktu) {
+   status = "Finish";
+   } else {
+   status = "Tidak Finish";
+   }
+}
+```
+
+* Getter & Setter
+
+Getter digunakan untuk mengambil nilai dari atribut private dan setter digunakan untuk mengubah nilai atribut dengan kontrol tertentu.
+
+```java
+    public String getNama() {
+        return nama;
     }
 
-    public void cekStatus() {
-        if (waktuFinish <= kategori.batasWaktu) {
-            status = "Finish";
-        } else {
-            status = "Tidak Finish";
+    public String getStatus() {
+        return status;
+    }
+
+    public void setWaktuFinish(double waktuFinish) {
+        if (waktuFinish >= 0) {
+            this.waktuFinish = waktuFinish;
         }
     }
-
-    public void tampil() {
-        System.out.println(nama + " | " + kategori.namaKategori + " | " + merkSepatu + " | " + waktuFinish + " | " + status);
-    }
-}
 ```
 * Inheritance
 
-* Abstraction
+Inheritance memungkinkan class turunan mewarisi atribut & method dari parent class. Kategori5K hingga HalfMarathon mewarisi dari Kategori.
+
+```java
+class Kategori5K extends Kategori {
+    public Kategori5K() {
+        super("5K", 5, "Merah", "Perunggu", 60);
+    }
+}
+```
+
+* Constructor
+
+Constructor digunakan untuk menginisialisasi objek saat dibuat.
+
+```java
+public Kategori(String namaKategori, double jarak, String warnaJersey, String jenisMedali, double batasWaktu) {
+        this.namaKategori = namaKategori;
+        this.jarak = jarak;
+        this.warnaJersey = warnaJersey;
+        this.jenisMedali = jenisMedali;
+        this.batasWaktu = batasWaktu;
+    }
+```
+* Abstraksi
+
+Abstraction menyembunyikan detail dan hanya menampilkan hal penting. Kategori dibuat abstract karena tidak digunakan langsung, tapi sebagai konsep umum.
+
+```java
+abstract class Kategori {
+    String namaKategori;
+    double jarak;
+    String warnaJersey;
+    String jenisMedali;
+    double batasWaktu;
+}
+```
 
 * Polymorphism
 
+Polymorphism = satu tipe, banyak bentuk. Variabel kategori bertipe Kategori tapi bisa menyimpan objek berbeda.
+
+```java
+Kategori kategori;
+if (k == 1) kategori = new Kategori5K();
+else if (k == 2) kategori = new Kategori10K();
+else kategori = new HalfMarathon();
+```
 * Interface
 
-* Association
+Interface adalah kontrak method tanpa implementasi. Class yang mengimplementasikan wajib mengisi method tersebut.
 
-* Composition
+```java
+interface Reward {
+    void tampilkanReward(Peserta p);
+}
+```
+
+* Overriding
+
+Overriding adalah mendefinisikan ulang method dari parent/interface.
+
+```java
+ @Override
+    public void tampilkanReward(Peserta p) {
+        if (p.status.equals("Finish")) {
+            System.out.println(p.nama + " mendapatkan medali " + p.kategori.jenisMedali);
+
+            if (p.kategori instanceof HalfMarathon) {
+                System.out.println("+ Jaket Finisher");
+            }
+        }
+    }
+```
+
+NB: Implementasi Prinsip OOP secara lebih detail pada src
 ## Penjelasan Keunikan Masalah
 * Penggunaan CRUD
   
