@@ -260,4 +260,8 @@ NB: Implementasi Prinsip OOP secara lebih detail pada src
   
   Analisis yang dilakukan berupa identifikasi merk sepatu yang paling banyak digunakan oleh peserta yang berhasil menyelesaikan lomba. Informasi ini dapat memberikan insight terkait preferensi peserta serta potensi hubungan antara perlengkapan yang digunakan dengan performa mereka. Dengan adanya fitur ini, sistem tidak hanya berfungsi sebagai alat pencatatan, tetapi juga sebagai sumber informasi yang bermanfaat untuk evaluasi event di masa mendatang.
 
+* Reward Tambahan
+
+  Untuk menjadikan event running ini lebih eksklusif, panitia memberikan reward kepada masing-masing kategori. Untuk kategori 5K mendapatkan medali pperunggu, untuk kategori 10K mendapatkan medali perak dan untuk kategori Half Marathon mendapatkan medali emas. Karena kategori Half Marathon adalah yang paling panjang sejauh 21K, panitia memberikan hak khusus finisher Half Marathon berupa tambahan reward jaket finisher untuk menghargai perjuangan peserta Half Marathon.
+
 
